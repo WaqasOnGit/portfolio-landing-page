@@ -1,0 +1,151 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #00BFFF;
+  --secondary-color: #333;
+  --background-color: #ffffff;
+  --hover-color: #0077CC;
+  --text-dark: #000000;
+  --text-light: #555555;
+  --text-gray: #AAAAAA;
+  --bg-dark: #2C2C2C;
+  --bg-footer: #1E1E1E;
+  --accent-yellow: #F8C471;
+  --accent-blue: #85C1E9;
+}
+@font-face {
+  font-family: "Manrope";
+  /* src: url('./Founts/Manrope/static/Manrope-Medium.ttf/M'); */
+  src: url("./Founts/Manrope/static/Manrope-Regular.ttf");
+
+  /* font-weight: 600; */
+}
+@font-face {
+  font-family: "Manrope-light";
+  src: url("./Founts/Manrope/static/Manrope-ExtraLight.ttf");
+}
+body {
+  font-family: "Manrope";
+  font-weight: 600;
+}
+
+#hero-bg {
+  width: 100%;
+  height: 850px; /* ya auto jahan chahiye */
+  background-image: url("./accests/Group\ 1328@2x.png");
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+  /* cover / contain / auto */
+  /* fallback color agar image load na ho */
+  background-color: var(--background-color);
+}
+/* Reset */
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 120px;
+  background-color: transparent;
+}
+
+/* Left side: logo + nav links */
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* space between logo and nav links */
+}
+
+/* Logo */
+.logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #25a4ad;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #25a4ad;
+}
+
+/* Auth buttons (right side) */
+.auth-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.auth-links .signin {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+.auth-links .signin:hover {
+  color: #25a4ad;
+}
+
+.auth-links .signup {
+  text-decoration: none;
+  color: #25a4ad;
+  border: 1px solid #25a4ad;
+  padding: 10px 33px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.auth-links .signup:hover {
+  background-color: #25a4ad;
+  color: #fff;
+}
+#Hero-conatiner {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  position: absolute;
+  left: 0%;
+  right: 0%; /* width: 100%; */
+}
+.hero-text {
+  /* padding: 170px 0px ; */
+  position: relative;
+  left: 75px;
+  top: 220px; 
+  z-index: 5;
+  line-height: 1;
+}
+/* .hero-text  {
+  font-size: 100px;
+  font-weight: 100;
+  font-family: "Manrope-light";
+  color: #000000;
+} */
+.hero-text h1 {
+  font-size: 90px;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+.hero-img{
+  position: relative;
+  /* left: 0%; */
+  right: 6.5%;
+}
